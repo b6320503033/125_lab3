@@ -26,14 +26,12 @@ int main()
     for(i=2; i<=n; i++)
 
         if(number[i]==1)
-        {
             if(n%i==0)
             {
                 f=f*i;
                 k++;
 
             }
-        }
 
     if(f==n&&k==3)
         printf("%d is a Lucky Number",n);
