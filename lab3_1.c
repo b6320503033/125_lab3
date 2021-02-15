@@ -13,7 +13,6 @@ int main()
             if(sb>max)
                 max=sb;
         }
-        printf("\n");
     }
 
     printf("%d %d",i,max);
