@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int f=0,k,i,j;
+    int f=1,k,i,j;
     scanf("%d",&k);
     char number[k];
     for(i = 0; i <= k; i++)
@@ -27,14 +27,19 @@ int main()
 
         }
     }
-    for(i=2; i<=k,f<=k; i++)
+    for(i=2; i<=k; i++)
     {
         if(number[i]==1)
+        {
             f*=i;
+            if(f>=k)
+                break;
+        }
     }
     if(f==k)
-    printf("%d is lucky number",k);
+        printf("%d is lucky number %d",k,f);
     else
-    printf("%d is not lucky number",k);
+        printf("%d is not lucky number %d",k,f);
+
     return 0;
 }
