@@ -4,7 +4,7 @@ int main()
     int k,i,j;
     scanf("%d",&k);
     char number[k];
-     for(i = 0; i <= k; i++)
+    for(i = 0; i <= k; i++)
     {
         number[i]=1;
     }
@@ -31,22 +31,11 @@ int main()
     {
         if(number[i]==1)
         {
-            for(i=2;i<=k;k=k/i)
-            printf("%d\n",i);
+            for(i=2; i<=k; k=k/i)
+                printf("%d\n",i);
         }
 
     }
-
-    /*for(i=0; i<=k; i++)
-    {
-        if((i==1 || i%2 == 0 || i%3 == 0 || i%5==0 || i%7==0)&& (i!=2 && i!=3 && i!=5 && i!=7))
-            continue;
-
-        printf("%d",i);
-
-        k=k/i;
-
-    }*/
 
     return 0;
 }
