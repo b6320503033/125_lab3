@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int k,i,j;
+    int f,k,i,j;
     scanf("%d",&k);
     char number[k];
     for(i = 0; i <= k; i++)
@@ -11,7 +11,6 @@ int main()
     for(i = 2; i <= k; i++)
     {
         if(number[i]==1)
-        {
             for(j=2*i; j<=k; j=j+i)
             {
                 number[j]=0;
@@ -24,13 +23,12 @@ int main()
                 else if(i%7==0)
                     number[j]=0;
             }
-
-        }
     }
     for(i=2; i<=k; i++)
     {
         if(number[i]==1)
         {
+
             for(i=2; i<=k; k=k/i)
                 printf("%d\n",i);
         }
